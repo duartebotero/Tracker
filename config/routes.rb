@@ -3,7 +3,10 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   root 'welcome#index'
-  #get 'about', to: 'pages#about'
+  get 'my_portfolio', to: 'users#my_portfolio'
+  get 'search_atocks', to: 'atocks#search'
 
+
+  #get 'about', to: 'pages#about'
   #resources :articles
 end
